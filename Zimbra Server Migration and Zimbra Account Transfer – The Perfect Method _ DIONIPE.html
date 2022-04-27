@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://dionipe.id/blog/zimbra-server-migration-and-zimbra-account-transfer-the-perfect-method -->
+<html lang="en" style="" class="js csstransforms3d sb-init sb-scroll-lock"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method | DIONIPE</title>
+        <meta name="generator" content="GravCMS">
+    <meta name="description" content="Blognya #Sysadmin, Welcome Bro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="https://dionipe.id/user/themes/antimatter/images/favicon.png">
+    <link rel="canonical" href="https://dionipe.id/blog/zimbra-server-migration-and-zimbra-account-transfer-the-perfect-method">
+
+                                                    
+                    
+                                        
+            <link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/grids-min.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/nucleus.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/template.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/notices.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/breadcrumbs.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/form-styles.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/simplesearch.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/youtube.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/login.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/slidebars.min.css" type="text/css" rel="stylesheet">
+<link href="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/rrssb.css" type="text/css" rel="stylesheet">
+<style>
+.gist table { table-layout: auto; }
+</style>
+
+        <script async="" src="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/analytics.js"></script><script src="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/jquery-2.1.4.min.js"></script>
+<script src="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/modernizr.custom.71422.js"></script>
+<script src="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/antimatter.js"></script>
+<script src="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/slidebars.min.js"></script>
+<script src="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/rrssb.min.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-41245255-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    
+</head>
+<body id="top" class="">
+    <div id="sb-site" style="min-height: 948px;">
+                <header id="header" class="scrolled">
+            <div id="logo">
+                <h3><a href="https://dionipe.id/">DIONIPE</a></h3>
+            </div>
+            <div id="navbar">
+                                                                
+
+<ul class="navigation">
+                                                <li class="has-children active">
+                <a href="https://dionipe.id/">
+                                        Home
+                    <span></span>
+                </a>
+                <ul>
+                                                        <li class="">
+                <a href="https://dionipe.id/blog/kubelet-failed-with-kubelet-cgroup-driver-cgroupfs-is-different-from-docker-cgroup-driver-systemd">
+                                        kubelet failed with kubelet cgroup driver: "cgroupfs" is different from docker cgroup driver: "systemd"
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/freebsd-image-openstack-and-bsd-cloudinit-with-zfs">
+                                        Freebsd Image Openstack and BSD-Cloudinit with ZFS
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-install-redmine-with-nginx-on-freebsd">
+                                        How to Install Redmine with Nginx on FreeBSD
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/accessing-rpi3-remotely-ssh-and-vnc">
+                                        Accessing RPi3 remotely SSH and VNC
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/block-adult-sites-on-google-at-your-school-or-workplace">
+                                        Block adult sites on Google at your school or workplace with RPZ bind9
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/change-name-network-interface-on-debian-to-eth0-schema">
+                                        Change name network interface on Debian to eth0 schema
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/powershell-windows-powershell-wifi-password-dump-one-liner">
+                                        [PowerShell] Windows Powershell WiFi password dump one-liner
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-use-zsh-or-another-shell-in-windows-10">
+                                        How to Use Zsh (or Another Shell) in Windows 10
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/ansible-playbook-proxmox-cluster-create-vm-from-template-debian">
+                                        Ansible-playbook Proxmox Cluster Create VM from Template Debian
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/ansible-playbook-proxmox-cluster-3-task">
+                                        Ansible-Playbook Proxmox Cluster 3 Task
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/image-centos-cloudinit-proxmox">
+                                        Image Centos Cloudinit Proxmox
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/ansible-non-standard-ssh-port-with-same-ip">
+                                        Ansible non standard ssh port with same IP
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/amd-macos-10-14-1-nested-virtualization-dengan-virtualbox-dan-proxmox">
+                                        AMD MacOS 10.14.1 Nested Virtualization dengan VirtualBox dan Proxmox
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-update-package-proxmox-cluster-with-ansible-playbook">
+                                        [HOW TO] Update Package Proxmox Cluster with Ansible Playbook
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/realtime-performance-monitoring-for-idiots-like-me">
+                                        Realtime performance monitoring for idiots like me
+                </a>
+            </li>
+                                        <li class="active">
+                <a href="https://dionipe.id/blog/zimbra-server-migration-and-zimbra-account-transfer-the-perfect-method">
+                                        Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-enable-telnet-in-windows-10">
+                                        How to Enable Telnet in Windows 10
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-upgrade-debian-9-stretch-to-linux-debian-10-buster">
+                                        How To Upgrade Debian 9 Stretch To Linux Debian 10 Buster
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/version-zlib_1-2-9-required-by-usr-local-lib-libpn16-so-16-not-found">
+                                        version ZLIB_1.2.9 required by /usr/local/lib/libpng16.so.16 not found
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/problem-with-legacy-bluestore-stats-reporting-detected">
+                                        Problem with Legacy BlueStore stats reporting detected
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/upgrading-centos-6-to-centos-7">
+                                        Upgrading CentOS 6 to CentOS 7
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/install-the-ceph-dashboard-in-proxmox-6">
+                                        Install the Ceph Dashboard in Proxmox 6
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/on-premise-kubernetes-clusters-with-metallb-in-bgp-mode-mikrotik">
+                                        On-premise Kubernetes Clusters with MetalLB in BGP mode Mikrotik
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-mount-cephfs-on-centos-7">
+                                        How to Mount CephFS from Proxmox on CentOS 7
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/macos-password-generator-in-zsh">
+                                        macOS Password Generator in ZSH
+                </a>
+            </li>
+            
+                </ul>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/pendaftaran">
+                                        Pendaftaran
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://server.dionipe.id/status">
+                                        Server-Status
+                </a>
+            </li>
+            
+            </ul>
+
+                                <span class="panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars"></span>
+            </div>
+        </header>
+        
+        
+                <section id="body" class="">
+            	<h4>1. Introduction</h4>
+<p>Zimbra project doesn’t have a cross migration or proper account transfer documentation. All they tell is to do copy the folder /opt/zimbra to your new servers. But if any of those files infected with a rootkit or other malicious scripts , then your new server also will be compromised. So never sync or copy the entire directory of your zimbra installation. Zimbra also tell you to upgrade your production server to the latest version before migration. But improper upgrade may result in entire data lose. With this procedure you can do:</p>
+<ul>
+<li>Migrate zimbra from one Operating System To another.</li>
+<li>Migrate zimbra account between any hardware and Operating systems configurations.</li>
+<li>No interruption on production server like software upgrade or service disable.</li>
+<li>Migrate zimbra from old version to a new version server</li>
+<li>Zimbra cross migrations without copying entire directories.</li>
+</ul>
+<h4>2. Requirement</h4>
+<p>You need an old server with zmibra account and a new fresh server with the Os you wish. Dont’ create or make any custom configuration or setting in you new server. Please make sure to set your new servers hostname same as the old one.</p>
+<ul>
+<li>Old server
+<ul>
+<li>Need ssh root login</li>
+<li>Need zimbra admin logins</li>
+<li>Enough HDD space to store backups</li>
+</ul></li>
+<li>New server
+<ul>
+<li>Must be installed with latest stable zimbra</li>
+<li>Need ssh root logins</li>
+<li>Need zimbra admin logins</li>
+<li>Enough HDD space to store backups</li>
+</ul></li>
+</ul>
+<h4>3. Presetup</h4>
+<p>You need to setup an ssh key from the new server’s root account to the old server’s root account.
+Reduce the TTL of MX records of your domain to 500 seconds . So that you can easily switch the domain’s IP after migration. Please remember to schedule the migration task on non peek hours.</p>
+<p>Create a directory in both new and old server into which we store all required files and data for doing the migration</p>
+<pre><code class="language-js">[root@zimbra ~]# mkdir /backups/zmigrate
+[root@zimbra ~]# chown zimbra.zimbra /backups/zmigrate
+[root@zimbra ~]# su - zimbra</code></pre>
+<p>All operation in your Zimbra server must be performed as Zimbra user itself, otherwise you will get permission and ownership issues in your zimbra server</p>
+<h4>4. Backup all data from Old server</h4>
+<p>We are going to copy all data from old server without interrupting the services.</p>
+<h5>4.1 Find all domains</h5>
+<p>You need to find all the domains from your old server. We will store the domain list in a file called domains.txt. You need to back all the domains list as follows,</p>
+<pre><code class="language-js">zimbra@zimbra:~$ cd /backups/zmigrate
+zimbra@zimbra:/backups/zmigrate$ zmprov gad &gt; domains.txt
+zimbra@zimbra:/backups/zmigrate$ cat domains.txt
+fun.com
+myserver.com
+justfortest.com
+checkit.com
+dieanotherday.com
+gnutest.com
+foo.com
+zimbra.foo.com
+zimbra@zimbra:/backups/zmigrate$</code></pre>
+<p>Now remove all domains and subdomains related with the main hostname of your server foo.com , from this list (domains.txt) because it was already created in your new server. So there is no need to create a new domain with the same name.</p>
+<h5>4.2 Find all admin accounts</h5>
+<p>Most of these servers will have only one admin. But some servers have multiple admins. So it will be good to find all admin accounts. We will store the admins list in admins.txt</p>
+<pre><code class="language-js">zimbra@zimbra:/backups/zmigrate$ zmprov gaaa &gt; admins.txt
+zimbra@zimbra:/backups/zmigrate$ cat admins.txt
+admin@foo.com
+zimbra@zimbra:/backups/zmigrate</code></pre>
+<h5>4.3 Find all email accounts</h5>
+<p>Next step is to find all the email accounts hosted in your old server. Get a list of your email accounts and save in the file emails.txt . So from this file we can see how many accounts that need to migrate.</p>
+<pre><code class="language-js">zimbra@zimbra:/backups/zmigrate$ zmprov -l gaa &gt;emails.txt
+zimbra@zimbra:/backups/zmigrate$ cat emails.txt
+gm@fun.com
+forest@fun.com
+galsync@fun.com
+fax@myserver.com
+paul@myserver.com
+angela@myserver.com
+brooke@myserver.com
+hnmobile1@myserver.com
+maria@justfortest.com
+samantha@justfortest.com
+backupmail@justfortest.com
+admin@checkit.com
+sandra@checkit.com
+zimbra@zimbra:/backups/zmigrate$</code></pre>
+<p>Please remove all the email accounts from the file /backups/zmigrate/emails.txt with a starting words like spam, virus, ham, galsync . There is no need to restore these accounts. Even if you still need to restore , you can do it. I don’t like spam and virus emails.</p>
+<h5>4.4 Get all distribution lists</h5>
+<p>You need to get all the distributions list and store it in a file called distributinlist.txt.</p>
+<pre><code class="language-js">zimbra@zimbra:~$ zmprov gadl &gt; /backups/zmigrate/distributinlist.txt
+zimbra@zimbra:~$ cat /backups/zmigrate/distributinlist.txt
+budgetrtodomainusers@fun.com
+healthnowdomainusers@myserver.com
+checkit.comdomainusers@checkit.com
+northpointessdomainusers@dieanotherday.com
+parkatnorthhillsdomainusers@gnutest.com
+zimbra@zimbra:~$</code></pre>
+<h5>4.5 Get all members in distribution lists</h5>
+<p>In this step we are going to collect all members in each of these distributions. We will create a folder called distributinlist_members and create a file under this folder named distributinlist.txt , then store all the distributions members.</p>
+<pre><code class="language-js">zimbra@zimbra:~$ mkdir /backups/zmigrate/distributinlist_members
+zimbra@zimbra:~$ for i in `cat /backups/zmigrate/distributinlist.txt`; do zmprov gdlm $i &gt; /backups/zmigrate/distributinlist_members/$i.txt ;echo "$i"; done
+budgetrtodomainusers@fun.com
+healthnowdomainusers@myserver.com
+checkit.comdomainusers@checkit.com</code></pre>
+<h5>4.6 Find all email account’s passwords</h5>
+<p>Now need to find the encrypted password of all of your old email accounts and store it under a folder named userpass/ as follows:</p>
+<pre><code class="language-js">zimbra@zimbra:/backups/zmigrate$ mkdir userpass
+zimbra@zimbra:/backups/zmigrate$ for i in `cat emails.txt`; do zmprov  -l ga $i userPassword | grep userPassword: | awk '{ print $2}' &gt; userpass/$i.shadow; done</code></pre>
+<h5>4.7 Backup all user names , Display names and Given Names</h5>
+<p>Zimbra will accept a Names and Disaplay names in email accounts during account creation. So we need to restore those data too. We will create a directory called userdata/ which contains these details of each of those email accounts</p>
+<pre><code class="language-js">zimbra@zimbra:/backups/zmigrate$ mkdir userdata
+zimbra@zimbra:/backups/zmigrate$ for i in `cat emails.txt`; do zmprov ga $i  | grep -i Name: &gt; userdata/$i.txt ; done</code></pre>
+<h5>4.8 Now backup all email account</h5>
+<p>This will take some time to take backup of all email accounts. So you can run this command behind “screen”. A tgz file will be created with each emails name. We will use this files to transfer email accounts.</p>
+<pre><code class="language-js">zimbra@zimbra:/backups/zmigrate$ for email in `cat /backups/zmigrate/emails.txt`; do  zmmailbox -z -m $email getRestURL '/?fmt=tgz' &gt; $email.tgz ;  echo $email ; done
+gm@fun.com
+forest@fun.com
+galsync@fun.com
+fax@myserver.com
+fax2@myserver.com
+paul@myserver.com</code></pre>
+<p>This tgz files contains</p>
+<ul>
+<li>Mail</li>
+<li>Contacts</li>
+<li>Calendars</li>
+<li>Briefcase</li>
+<li>Tasks</li>
+<li>Searches</li>
+<li>Tags</li>
+<li>Folders
+All subfolders are included, except Junk and Trash. There is no way to include these in the big dump, but they can be exported separately:</li>
+</ul>
+<h5>4.9 Now backup alias</h5>
+<p>Some times your server may have email aliases for certain accounts. So you need to copy those aliases too. We will create a sub folder called alias/ for storing the backup of Alias.</p>
+<pre><code class="language-js">zimbra@zimbra:/backups/zmigrate$ mkdir -p alias/
+zimbra@zimbra:/backups/zmigrate$ for i in `cat emails.txt`; do zmprov ga  $i | grep zimbraMailAlias |awk '{print $2}' &gt; alias/$i.txt ;echo $i ;done
+gm@fun.com
+forest@fun.com</code></pre>
+<p>Some of your email accounts don’t have alias. So the above created files may be an empty file. Remove those empty files as follows,’\</p>
+<pre><code class="language-js">zimbra@zimbra:/backups/zmigrate$ find alias/ -type f -empty | xargs -n1 rm -v </code></pre>
+<h5>4.10 Now Backup all email signatures</h5>
+<p>Please use the following script to backup all signatures of email accounts. Special thanks for <strong><strong>Antonio Díaz Meneses</strong></strong> for giving the inputs.</p>
+<pre><code class="language-js">#!/bin/bash
+
+mkdir signature
+for i in `cat emails.txt`; do
+    zmprov ga $i zimbraPrefMailSignatureHTML &gt; /tmp/signature;
+    sed -i -e "1d" /tmp/signature ;
+    sed 's/zimbraPrefMailSignatureHTML: //g' /tmp/signature &gt; signatures/$i.signature ;
+    rm -rf /tmp/signature;
+    `zmprov ga $i zimbraSignatureName &gt; /tmp/name` ;
+    sed -i -e "1d" /tmp/name ;
+    sed 's/zimbraSignatureName: //g' /tmp/name &gt; signatures/$i.name ;
+    rm -rf /tmp/name ;
+done</code></pre>
+<h5>4.11 Backup all email account filters</h5>
+<p>The email backup doesn’t have the email filters. So it need to be backed up manually. To download all email accounts filters. Please use the following scripts</p>
+<pre><code class="language-js">#!/bin/bash
+# Backup filters of all email accounts
+mkdir filter/
+for i in `cat emails.txt`; do
+    zmprov ga $i zimbraMailSieveScript &gt; /tmp/filter
+    sed -i -e "1d" /tmp/filter
+    sed 's/zimbraMailSieveScript: //g' /tmp/filter  &gt; filter/$i.filter
+    rm -f /tmp/filter
+    echo "Filter  downloaded for .... $i"
+done </code></pre>
+<h5>4.12 Rsync folder to new server</h5>
+<p>Now we have all the required data to do the migration process. As a summery :</p>
+<ul>
+<li>/backups/zmigrate – Have all the backups stored</li>
+<li>/backups/zmigrate/domains.txt – Contains the domains names</li>
+<li>/backups/zmigrate/emails.txt – Contains the list of email accounts</li>
+<li>/backups/zmigrate/distributinlist.txt – Contains the distribution lists</li>
+<li>/backups/zmigrate/distributinlist_members – Contains the members in each of your distributions</li>
+<li>/backups/zmigrate/userpass – Contains the encrypted password of your email accounts</li>
+<li>/backups/zmigrate/userdata – containts the email accounts user informations</li>
+<li>/backups/zmigrate/alias – Contains all the aliases of your email accounts</li>
+</ul>
+<p>Also the parent folder /backups/zmigrate contains a lot of zip file which are the data inside emails.</p>
+<p>Now rsync the files as follows,</p>
+<pre><code class="language-js">root@newserver # rsync -avp -e 'ssh -p 22' root@old-server-ip:/backups/zmigrate /backups/</code></pre>
+<h4>5. Restore in new server</h4>
+<p>So after finishing the rsync process , we need to restore this in your new server as follows:</p>
+<p>All this operations must be carried out as zimbra sudo user itself. Don’t use root account to store the backups</p>
+<pre><code class="language-js">[root@zimbra ~]# su - zimbra
+[zimbra@zimbra]$</code></pre>
+<h5>5.1 Restore all domains</h5>
+<p>Now create all the domains that we have from the file /backups/zmigrate/domains.txt</p>
+<pre><code class="language-js">[zimbra@zimbra zmigrate]$ for i in `cat /backups/zmigrate/domains.txt `; do  zmprov cd $i zimbraAuthMech zimbra ;echo $i ;done
+2c86f244-de9d-4b7c-8e22-2246a8256219
+myserver.com
+dbf75058-d85e-4d60-8b69-1f148a456eb6
+justfortest.com
+ee90ffa2-505d-449f-82fd-129acb21cb5e
+checkit.com
+8b6bf287-f61e-4930-ada0-96b817292556
+dieanotherday.com
+17d3c73c-14f7-43aa-9fd2-c9be9e29c9e5</code></pre>
+<p>You can also verify the domains created from the zimbra admin panel too</p>
+<h5>5.2 Create email accounts and set the old password</h5>
+<p>We need to create the email accounts for storing the mails. We also need to set the old passwords too. We already collected the account info and passwords.</p>
+<p>To Create email accounts and restore passwords . Please use the following script to create it</p>
+<pre><code class="language-js">#!/bin/bash
+#Scrit  for creating the email accounts createacct.sh
+USERPASS="/backups/zmigrate/userpass"
+USERDDATA="/backups/zmigrate/userdata"
+USERS="/backups/zmigrate/emails.txt"
+for i in `cat $USERS`
+do
+givenName=$(grep givenName: $USERDDATA/$i.txt | cut -d ":" -f2)
+displayName=$(grep displayName: $USERDDATA/$i.txt | cut -d ":" -f2)
+shadowpass=$(cat $USERPASS/$i.shadow)
+tmpPass="CHANGEme"
+zmprov ca $i CHANGEme cn "$givenName" displayName "$displayName" givenName "$givenName" 
+zmprov ma $i userPassword "$shadowpass"
+done</code></pre>
+<h5>5.3 Restore email accounts</h5>
+<p>Now we are going to restore the emails from the Zip file. This process may take some hours. So it will be good to run behind “screen” command.</p>
+<pre><code class="language-js">[zimbra@zimbra zmigrate]$ for i in `cat /backups/zmigrate/emails.txt`; do zmmailbox -z -m $i postRestURL "/?fmt=tgz&amp;resolve=skip" /backups/zmigrate/$i.tgz ;  echo "$i -- finished "; done
+gm@fun.com -- finished 
+forest@fun.com -- finished </code></pre>
+<h5>5.4 Now recreate the distribution lists</h5>
+<p>It is time to recreate all the distribution lists as follows.</p>
+<pre><code class="language-js">[zimbra@zimbra zmigrate]$ for i in `cat distributinlist.txt`; do zmprov cdl $i ; echo "$i -- done " ; done
+2a852fd8-6e66-426e-a76d-15192536042a
+budgetrtodomainusers@fun.com -- done 
+a0f6ddb3-8525-4194-9397-6cf0a920dda6</code></pre>
+<h5>5.5 Restore the distribution lists</h5>
+<p>After creating the distribution lists we need to add all the members inside the distribution lists. We have the distribution lists in the folder distributinlist_members/ and the list is in distributionlist.txt file. Please use the following small script to restore the distribution lists.</p>
+<pre><code class="language-js">[zimbra@zimbra zmigrate]$ cat restoredist.sh 
+#!/bin/bash
+# add all memebers to each of these distribution lists
+for i in `cat distributinlist.txt`
+do
+    for j in `grep -v '#' distributinlist_members/$i.txt |grep '@'` 
+    do
+    zmprov adlm $i $j
+    echo " $j member has been added to list $i"
+    done
+
+done</code></pre>
+<h5>5.6 Restore Alias accounts</h5>
+<p>Please use the following script to restore alias. This will add all the aliases in your email accounts.</p>
+<pre><code class="language-js">#!/bin/bash
+for i in `cat /backups/zmigrate/emails.txt`
+do
+    if [ -f "alias/$i.txt" ]; then
+    for j in `grep '@' /backups/zmigrate/alias/$i.txt`
+    do
+    zmprov aaa $i $j
+    echo "$i HAS ALIAS $j --- Restored"
+    done
+    fi
+done</code></pre>
+<h5>5.7 Restore Email Signatures</h5>
+<p>No please use the following script to restore email signatures</p>
+<pre><code class="language-js">#!/bin/bash
+for i in `cat emails.txt`; do
+    zmprov ma $i zimbraSignatureName "`cat signatures/$i.name`";
+    zmprov ma $i zimbraPrefMailSignatureHTML "`cat signatures/$i.signature`";
+    zmprov ga $i zimbraSignatureId &gt; /tmp/firmaid; sed -i -e "1d" /tmp/firmaid;
+    firmaid=`sed 's/zimbraSignatureId: //g' /tmp/firmaid`;
+    zmprov ma $i zimbraPrefDefaultSignatureId "$firmaid";
+    zmprov ma $i zimbraPrefForwardReplySignatureId "$firmaid";
+    rm -rf /tmp/firmaid;
+    echo $i "done!";
+done</code></pre>
+<h5>5.8 Restore Email Filters</h5>
+<p>You may use the following scripts to restore all your email accounts filters</p>
+<pre><code class="language-js">#!/bin/bash
+for i in `cat emails.txt`; do
+    zmprov ma  $i zimbraMailSieveScript "`cat filter/$i.filter`";
+    echo "Filter Restore for account ... $i"; 
+
+done</code></pre>
+<h4>6. Conclusion</h4>
+<p>So now we migrated all our email accounts. It is time for DNS change. You need to shut down the old zimbra services and change the DNS. After that send some test emails and make sure everything is working fine. Next step is to secure your zimbra server. You need to install ssl certificates and firewall in your new zimbra server. Now you have a new server with new packages and files with the same old email accounts and its data.</p>
+<h4>7. References</h4>
+<pre><code class="language-js">https://wiki.zimbra.com/wiki/Zmprov_Examples
+https://wiki.zimbra.com/wiki/Zmprov
+https://wiki.zimbra.com/wiki/Backing_up_and_restoring_Zimbra_%28Open_Source_Version%29
+'https://xmission.com/blog/2015/04/30/zimbra-server-admin-tip-mailbox-password-migration-and-server-settings-comparison'
+http://stdout.no/zimbra-open-source-backup-strategy-and-scripts/
+https://syslint.com/blog/tutorial/zimbra-server-migration-and-zimbra-account-transfer-the-perfect-method/</code></pre>
+        </section>
+        
+                <footer id="footer">
+            <div class="totop">
+                <span><a href="https://dionipe.id/blog/zimbra-server-migration-and-zimbra-account-transfer-the-perfect-method#" id="toTop"><i class="fa fa-arrow-up"></i></a></span>
+            </div>
+            <p><a href="http://getgrav.org/">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com/">RocketTheme</a>.</p>
+        </footer>
+            </div>
+            <div class="sb-slidebar sb-left sb-width-thin">
+            <div id="panel">
+            
+
+<ul class="navigation">
+                                                <li class="has-children active">
+                <a href="https://dionipe.id/">
+                                        Home
+                    <span></span>
+                </a>
+                <ul>
+                                                        <li class="">
+                <a href="https://dionipe.id/blog/kubelet-failed-with-kubelet-cgroup-driver-cgroupfs-is-different-from-docker-cgroup-driver-systemd">
+                                        kubelet failed with kubelet cgroup driver: "cgroupfs" is different from docker cgroup driver: "systemd"
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/freebsd-image-openstack-and-bsd-cloudinit-with-zfs">
+                                        Freebsd Image Openstack and BSD-Cloudinit with ZFS
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-install-redmine-with-nginx-on-freebsd">
+                                        How to Install Redmine with Nginx on FreeBSD
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/accessing-rpi3-remotely-ssh-and-vnc">
+                                        Accessing RPi3 remotely SSH and VNC
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/block-adult-sites-on-google-at-your-school-or-workplace">
+                                        Block adult sites on Google at your school or workplace with RPZ bind9
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/change-name-network-interface-on-debian-to-eth0-schema">
+                                        Change name network interface on Debian to eth0 schema
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/powershell-windows-powershell-wifi-password-dump-one-liner">
+                                        [PowerShell] Windows Powershell WiFi password dump one-liner
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-use-zsh-or-another-shell-in-windows-10">
+                                        How to Use Zsh (or Another Shell) in Windows 10
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/ansible-playbook-proxmox-cluster-create-vm-from-template-debian">
+                                        Ansible-playbook Proxmox Cluster Create VM from Template Debian
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/ansible-playbook-proxmox-cluster-3-task">
+                                        Ansible-Playbook Proxmox Cluster 3 Task
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/image-centos-cloudinit-proxmox">
+                                        Image Centos Cloudinit Proxmox
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/ansible-non-standard-ssh-port-with-same-ip">
+                                        Ansible non standard ssh port with same IP
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/amd-macos-10-14-1-nested-virtualization-dengan-virtualbox-dan-proxmox">
+                                        AMD MacOS 10.14.1 Nested Virtualization dengan VirtualBox dan Proxmox
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-update-package-proxmox-cluster-with-ansible-playbook">
+                                        [HOW TO] Update Package Proxmox Cluster with Ansible Playbook
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/realtime-performance-monitoring-for-idiots-like-me">
+                                        Realtime performance monitoring for idiots like me
+                </a>
+            </li>
+                                        <li class="active">
+                <a href="https://dionipe.id/blog/zimbra-server-migration-and-zimbra-account-transfer-the-perfect-method">
+                                        Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-enable-telnet-in-windows-10">
+                                        How to Enable Telnet in Windows 10
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-upgrade-debian-9-stretch-to-linux-debian-10-buster">
+                                        How To Upgrade Debian 9 Stretch To Linux Debian 10 Buster
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/version-zlib_1-2-9-required-by-usr-local-lib-libpn16-so-16-not-found">
+                                        version ZLIB_1.2.9 required by /usr/local/lib/libpng16.so.16 not found
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/problem-with-legacy-bluestore-stats-reporting-detected">
+                                        Problem with Legacy BlueStore stats reporting detected
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/upgrading-centos-6-to-centos-7">
+                                        Upgrading CentOS 6 to CentOS 7
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/install-the-ceph-dashboard-in-proxmox-6">
+                                        Install the Ceph Dashboard in Proxmox 6
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/on-premise-kubernetes-clusters-with-metallb-in-bgp-mode-mikrotik">
+                                        On-premise Kubernetes Clusters with MetalLB in BGP mode Mikrotik
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/how-to-mount-cephfs-on-centos-7">
+                                        How to Mount CephFS from Proxmox on CentOS 7
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/blog/macos-password-generator-in-zsh">
+                                        macOS Password Generator in ZSH
+                </a>
+            </li>
+            
+                </ul>
+            </li>
+                                        <li class="">
+                <a href="https://dionipe.id/pendaftaran">
+                                        Pendaftaran
+                </a>
+            </li>
+                                        <li class="">
+                <a href="https://server.dionipe.id/status">
+                                        Server-Status
+                </a>
+            </li>
+            
+            </ul>
+
+            </div>
+        </div>
+                 <script>
+        $(function () {
+            $(document).ready(function() {
+              $.slidebars({
+                hideControlClasses: true,
+                scrollLock: true
+              });
+            });
+        });
+        </script>
+        <script src="./Zimbra Server Migration and Zimbra Account Transfer – The Perfect Method _ DIONIPE_files/simplesearch.js"></script>
+
+    
+
+</body></html>
